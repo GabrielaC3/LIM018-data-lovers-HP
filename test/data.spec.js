@@ -16,6 +16,7 @@ describe('sorData', () => {
   it('Deberia retornar los personajes ordenado de manera descendente"', () => {
     expect(sortData(data.characters,2)).toStrictEqual([43,28,11,31,19,16,7,42,3,21,1,29,17,12,18,36,20,39,15,6,35,10,41,38,2,0,9,8,23,45,46,22,27,40,13,5,33,47,34,26,25,44,32,30,14,37,4,24]);
 });
+});
 
 describe('filterCasa', ()=>{
   it('Deberia ser una función',()=>{
@@ -79,6 +80,4 @@ describe('computeStats', ()=>{
   it('Deberia retornar el promedio',()=>{
     expect(computeStats([5,5,5])).toStrictEqual("6.25");
   });
-});
-
 });

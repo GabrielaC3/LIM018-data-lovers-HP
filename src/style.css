@@ -719,7 +719,6 @@ and (orientation: portrait)
 
 .checkbtn{
   font-size: 80px;
-  color: #fff;
   float: right;
   line-height: 2;
   margin-right: 40px;
@@ -958,7 +957,6 @@ font-weight:bold ;
   justify-content: center; 
 }
 
-
 #pocionesOrdenadas{
 display: flex;
 flex-direction: row;
@@ -988,3 +986,5 @@ width:auto;
 height:auto;
 justify-content: center; 
 }
+
+

@@ -14,10 +14,12 @@ let opcionPersonaje=document.getElementById('mostrarPersonaje');
 //pintar opcion inicio al inicializar
 inicio.classList.add('pintarOpcionNav');
 
+//PÁGINA DE INICIO
 inicio.addEventListener ("click", () =>{
-document.getElementById("mostrarInicio").style.display = "block";
-document.getElementById("mostrarPersonajes").style.display = "none"; 
-document.getElementById("mostrarHechizos").style.display = "none";  document.getElementById("mostrarPociones").style.display = "none"; 
+  document.getElementById("mostrarInicio").style.display = "block";
+  document.getElementById("mostrarPersonajes").style.display = "none"; 
+  document.getElementById("mostrarHechizos").style.display = "none";  
+  document.getElementById("mostrarPociones").style.display = "none"; 
   //pintar el nav inicio
   inicio.classList.add('pintarOpcionNav');
   // despintar los nav personaje,hechizo y pociones
@@ -26,6 +28,7 @@ document.getElementById("mostrarHechizos").style.display = "none";  document.get
    mostrarPociones.classList.remove('pintarOpcionNav');
 });
 
+// PÁGINA DE PERSONAJES 
 //llamando a la section para mostrar los personajes
 let mostrarPer = document.getElementById("mostrarPersonaje");
 mostrarPer.addEventListener ("click",mostrarTodosPer);
@@ -67,10 +70,12 @@ function mostrarTodosPer(){
 function crearCerrar(newDiv){
     let cerrar=document.createElement("button");
     cerrar.classList.add('cerrar');
+
     newDiv.appendChild(cerrar);
+
     cerrar.innerText = 'X';
     
-cerrar.addEventListener('click',()=>{
+  cerrar.addEventListener('click',()=>{
   newDiv.style.display ='none'; 
 });
 }
@@ -80,14 +85,14 @@ let btnOrdenar = document.getElementById("btnOrdenar");
 
 btnOrdenar.addEventListener ("mouseenter", () =>{
   //LLAMNDO AL COMBOBOX  DE ORDENAR PERSONAJES VISIBLE
-document.getElementById("orden").style.display = "block";
-menuCasa.style.display="none";
-menuEspecie.style.display="none";
-menuGenero.style.display="none";
-menuAsc.style.display="none";
-menuBuscador.style.display="none"
-document.getElementById('conteo').style.display="none";
-document.getElementById("personajeBuscado").style.display = "none";
+  document.getElementById("orden").style.display = "block";
+  menuCasa.style.display="none";
+  menuEspecie.style.display="none";
+  menuGenero.style.display="none";
+  menuAsc.style.display="none";
+  menuBuscador.style.display="none";
+  document.getElementById('conteo').style.display="none";
+  document.getElementById("personajeBuscado").style.display = "none";
 
 //reiniciar el select de los demas
 filtrarCasa.selectedIndex=0;
@@ -230,7 +235,7 @@ crearCerrar(datosDiv);
       //creando div que contiene nombre patronus y el btn cerrar
     let divNomPatCerrar=document.createElement("div");
     patronusDiv.appendChild(divNomPatCerrar);
-   divNomPatCerrar.classList.add('divNomPatCerrar');
+    divNomPatCerrar.classList.add('divNomPatCerrar');
        
     let nombrePatro=document.createElement("div");
     divNomPatCerrar.appendChild(nombrePatro);
@@ -252,6 +257,7 @@ crearCerrar(datosDiv);
     cerrar.addEventListener('click',()=>{
       patronusDiv.style.display ='none'; 
     });
+
     });     
   } 
   opcionPersonaje.classList.add('pintarOpcionNav');
@@ -306,10 +312,10 @@ menuEspecie.addEventListener('mouseleave',()=>{
     menuAsc.style.display="none";
     menuBuscador.style.display="none"
     menuOrden.style.display="none";
-   });
+   })
   menuGenero.addEventListener('mouseleave',()=>{
      menuGenero.style.display="none";
-    });
+    })
 
   labelAscende.addEventListener('mouseenter',()=>{
     menuAsc.style.display="block";
@@ -318,10 +324,10 @@ menuEspecie.addEventListener('mouseleave',()=>{
     menuGenero.style.display="none";
     menuBuscador.style.display="none"
     menuOrden.style.display="none";
-     });
+     })
   menuAsc.addEventListener('mouseleave',()=>{
     menuAsc.style.display="none";
-      });
+      })
 
   labelBuscador.addEventListener('mouseenter',()=>{
     menuBuscador.style.display="block"
@@ -330,7 +336,7 @@ menuEspecie.addEventListener('mouseleave',()=>{
     menuEspecie.style.display="none";
     menuGenero.style.display="none";
     menuOrden.style.display="none";
-  });
+  })
 
   menuBuscador.addEventListener('mouseleave',()=>{
     menuBuscador.style.display="none";
@@ -518,7 +524,6 @@ if(personajeBuscado.length==0){
 }}
 crearDivs(personajeBuscado,personaBuscada);
 });
-
 
 // PÁGINA DE HECHIZO
 let mostrarHechizo = document.getElementById("mostrarH");
@@ -891,5 +896,6 @@ new Chart(grafica, {
         },
     }
 }); */
+
 
 

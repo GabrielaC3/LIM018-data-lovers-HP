@@ -210,6 +210,7 @@ En el proyecto se ha logrado  desarrollar con los siguientes objetivos de aprend
 
 ## 3. Diseño de la Interfaz de Usuario
 
+
 ### Prototipo de baja fidelidad
 ![ ](../main/src/prototipo2.jpg)
 ![ ](../main/src/prototipo.png)
@@ -221,3 +222,4 @@ En el proyecto se ha logrado  desarrollar con los siguientes objetivos de aprend
 
 ### Git Pages: 
 https://gabrielac3.github.io/LIM018-data-lovers-HP/src/
+
