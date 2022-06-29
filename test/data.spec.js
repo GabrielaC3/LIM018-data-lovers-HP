@@ -13,15 +13,8 @@ describe('sorData', () => {
     expect(sortData(data.characters,1)).toStrictEqual([24,4,37,14,30,32,44,25,26,34,47,33,5,13,40,27,22,46,45,23,8,9,0,2,38,41,10,35,6,15,39,20,36,18,12,17,29,1,21,3,42,7,16,19,31,11,28,43]);
   });
 
-
   it('Deberia retornar los personajes ordenado de manera descendente"', () => {
     expect(sortData(data.characters,2)).toStrictEqual([43,28,11,31,19,16,7,42,3,21,1,29,17,12,18,36,20,39,15,6,35,10,41,38,2,0,9,8,23,45,46,22,27,40,13,5,33,47,34,26,25,44,32,30,14,37,4,24]);
-
-  it('Deberia retornar personajes ordenado ascendentemente', () => {
-    expect(sortData(data.characters,1)).toStrictEqual([24, 4, 37, 14, 30, 32, 44, 25, 26, 34, 47, 33, 5, 13, 40, 27, 22, 46, 45, 23, 8, 9, 0, 2, 38, 41, 10, 35, 6, 15, 39, 20, 36, 18, 12, 17, 29, 1, 21, 3, 42, 7, 16, 19, 31, 11, 28, 43]);
-
-  });
-
 });
 
 describe('filterCasa', ()=>{
@@ -88,13 +81,4 @@ describe('computeStats', ()=>{
   });
 });
 
-
-
-
-
-
-
-
-
-
-
+});
